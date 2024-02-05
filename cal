@@ -1,11 +1,9 @@
-javac ExampleInterface.java
-javac ExampleImplimentation.java
-rmic ExampleServer
+
+javac <interface>.java
+javac <implementation>.java
+rmic <implementation>
 rmiregistry &
-javac ExampleServer.java
-java ExampleServer
-
-second terminal
-
-javac ExampleClient.java
-java ExampleClient
+javac <server>.java
+java <server>
+javac <client>.java
+java <client>
