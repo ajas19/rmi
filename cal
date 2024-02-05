@@ -1,0 +1,11 @@
+javac ExampleInterface.java
+javac ExampleImplimentation.java
+rmic ExampleServer
+rmiregistry &
+javac ExampleServer.java
+java ExampleServer
+
+second terminal
+
+javac ExampleClient.java
+java ExampleClient
